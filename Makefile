@@ -6,7 +6,7 @@
 #    By: username <username@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/10 13:13:54 by username          #+#    #+#              #
-#    Updated: 2026/11/10 15:18:29 by username         ###   ########.fr        #
+#    Updated: 2026/11/10 15:22:13 by username         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,8 @@ CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
 NAME = libftprintf.a
 
-SRCS = ft_printf.c src/ft_prtstr
-OBJS = $(SRCS:src/%.c=.o)
+SRCS = ft_printf.c src/ft_prtstr.c
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
