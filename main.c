@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 12:03:45 by username          #+#    #+#             */
-/*   Updated: 2026/11/10 12:27:29 by username         ###   ########.fr       */
+/*   Updated: 2026/11/10 13:04:35 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@
 
 int main()
 {
-	printf("\n %d \n",ft_printf("%d hello"));
+	ft_printf("%%d hello");
 }
