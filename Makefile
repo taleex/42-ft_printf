@@ -26,6 +26,7 @@ re: fclean all
 
 .PHONY: all clean fclean re
 
+# For testing:
 
 main: re
 	$(CC) $(CFLAGS) main.c $(NAME) -o test
@@ -33,4 +34,4 @@ main: re
 fcmain: fclean
 	$(RM) test
 
-remain: fcmain main
+rb: fcmain main
