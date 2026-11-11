@@ -6,13 +6,28 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 10:32:27 by username          #+#    #+#             */
-/*   Updated: 2026/11/11 12:24:02 by username         ###   ########.fr       */
+/*   Updated: 2026/11/11 16:08:05 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+static int	ft_unsigned_digits(unsigned int nbr)
+{
+	size_t i;
+
+	i = 0;
+	if (nbr == 0)
+		return (1);
+	while (nbr != 0)
+	{
+		nbr /= 10;
+		i++;
+	}
+	return (i);
+}
+
 int	ft_prtunsigned(unsigned int nbr)
 {
-	return (nbr);
+	return (ft_unsigned_digits(nbr));
 }

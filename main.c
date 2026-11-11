@@ -6,14 +6,16 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 12:03:45 by username          #+#    #+#             */
-/*   Updated: 2026/11/11 13:11:28 by username         ###   ########.fr       */
+/*   Updated: 2026/11/11 16:04:18 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <limits.h>
+#include <stdio.h>
 
 int	main(void)
 {
-    ft_printf("%p", NULL);
+	printf("%u\n", 45);
+    ft_printf("%u\n", 45);
 }
