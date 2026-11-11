@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 12:03:45 by username          #+#    #+#             */
-/*   Updated: 2026/11/11 16:19:23 by username         ###   ########.fr       */
+/*   Updated: 2026/11/11 16:40:31 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@
 
 int	main(void)
 {
-	ft_printf("%d", printf("%u", 45));
-   	ft_printf("%d", ft_printf("%u", 45));
+	ft_printf("%d", printf("%x\n", 42));
+   	ft_printf("%d\n", ft_printf("%x\n", 42));
 }

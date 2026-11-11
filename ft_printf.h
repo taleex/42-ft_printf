@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 12:19:54 by username          #+#    #+#             */
-/*   Updated: 2026/11/11 12:21:08 by username         ###   ########.fr       */
+/*   Updated: 2026/11/11 16:38:04 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ int	ft_prtstr(char *str);
 int	ft_prtnbr(int n);
 int	ft_prtunsigned(unsigned int nbr);
 int	ft_prtptr(void *str);
-int	ft_prthex(ssize_t hex, bool case_sense);
+int	ft_prthex(unsigned int hex, bool case_sense);
 #endif
