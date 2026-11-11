@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 14:45:07 by username          #+#    #+#             */
-/*   Updated: 2026/11/10 15:29:14 by username         ###   ########.fr       */
+/*   Updated: 2026/11/11 12:13:44 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_prtstr(char *str)
 {
 	if (!str)
-		return (write(1, "(NULL)", 6));
+		return (write(1, "(null)", 6));
 	else
 		return (write(1, str, ft_strlen(str)));
 }

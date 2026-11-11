@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 10:32:27 by username          #+#    #+#             */
-/*   Updated: 2026/11/11 11:16:06 by username         ###   ########.fr       */
+/*   Updated: 2026/11/11 12:24:02 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int	ft_prtunsigned(unsigned int nbr)
 {
-	return(nbr);
+	return (nbr);
 }

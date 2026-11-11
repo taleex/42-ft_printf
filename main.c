@@ -6,13 +6,13 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 12:03:45 by username          #+#    #+#             */
-/*   Updated: 2026/11/10 15:30:58 by username         ###   ########.fr       */
+/*   Updated: 2026/11/11 12:23:21 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int main()
+int	main(void)
 {
-	ft_printf("%d",ft_printf("%s", "helloopa"));
+	ft_printf("\n%d", ft_printf("%s\n", "hey"));
 }

@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 10:30:50 by username          #+#    #+#             */
-/*   Updated: 2026/11/11 11:23:29 by username         ###   ########.fr       */
+/*   Updated: 2026/11/11 12:21:55 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 int	ft_prtptr(void *str)
 {
-
 	(void)str;
 	return (0);
 }
