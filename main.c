@@ -6,13 +6,14 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 12:03:45 by username          #+#    #+#             */
-/*   Updated: 2026/11/11 12:23:21 by username         ###   ########.fr       */
+/*   Updated: 2026/11/11 13:05:50 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <limits.h>
 
 int	main(void)
 {
-	ft_printf("\n%d", ft_printf("%s\n", "hey"));
+    ft_printf("%s", NULL);
 }

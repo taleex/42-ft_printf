@@ -6,16 +6,18 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 10:31:34 by username          #+#    #+#             */
-/*   Updated: 2026/11/11 12:23:35 by username         ###   ########.fr       */
+/*   Updated: 2026/11/11 13:00:19 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	ft_digits(int nbr)
+static int	ft_digits(int n)
 {
-	size_t	count;
+	int		count;
+	long	nbr;
 
+	nbr = n;
 	count = 0;
 	if (nbr < 0)
 	{
@@ -32,20 +34,11 @@ static int	ft_digits(int nbr)
 	return (count);
 }
 
-// static void ft_putnbrs(int n)
-// {
-
-// }
-
 int	ft_prtnbr(int n)
 {
 	int	digits;
 
 	digits = ft_digits(n);
-	if (n < 0)
-	{
-		write(1, "-", 1);
-		n = -n;
-	}
+	ft_putnbr_fd(n, 1);
 	return (digits);
 }
