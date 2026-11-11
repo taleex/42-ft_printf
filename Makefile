@@ -6,16 +6,18 @@
 #    By: username <username@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/10 13:13:54 by username          #+#    #+#              #
-#    Updated: 2026/11/10 15:22:13 by username         ###   ########.fr        #
+#    Updated: 2026/11/11 11:24:05 by username         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I.
 RM = rm -f
 NAME = libftprintf.a
 
-SRCS = ft_printf.c src/ft_prtstr.c
+SRCS = ft_printf.c src/ft_prthex.c src/ft_prtnbr.c src/ft_prtptr.c src/ft_prtstr.c\
+src/ft_prtunsigned.c
+
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
@@ -24,6 +26,13 @@ $(NAME): $(OBJS)
 	$(MAKE) -C ./libft
 	cp libft/libft.a $(NAME)
 	ar rc $(NAME) $(OBJS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+src/%.o: src/%.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
 	$(MAKE) clean -C ./libft
 	$(RM) $(OBJS)

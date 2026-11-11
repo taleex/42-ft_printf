@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 12:04:27 by username          #+#    #+#             */
-/*   Updated: 2026/11/10 15:27:01 by username         ###   ########.fr       */
+/*   Updated: 2026/11/11 11:17:09 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,16 @@ static int	ft_type_handler(char c, va_list args)
 	}
 	else if (c == 's')
 		return (ft_prtstr(va_arg(args, char *)));
-	else if (c == 'd')
-		ft_putnbr_fd(va_arg(args, int), 1);
-
+	else if (c == 'd' || c == 'i')
+		return(ft_prtnbr(va_arg(args, int)));
+	else if (c == 'p')
+		return (ft_prtptr(va_arg(args,void *)));
+	else if (c == 'u')
+		return (ft_prtunsigned(va_arg(args,unsigned int)));
+	else if (c == 'x')
+		return (ft_prthex(va_arg(args,ssize_t), false));
+	else if (c == 'X')
+		return (ft_prthex(va_arg(args,ssize_t), true));
 	return (0);
 }
 
