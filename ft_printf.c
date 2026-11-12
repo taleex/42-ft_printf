@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 12:04:27 by username          #+#    #+#             */
-/*   Updated: 2026/11/11 16:34:47 by username         ###   ########.fr       */
+/*   Updated: 2026/11/12 10:51:36 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int	ft_printf(const char *format, ...)
 	va_start (args, format);
 	while (format[i])
 	{
-		if (format[i] == '%')
+		if (format[i] == '%' && format[i + 1])
 		{
 			i++;
 			j += ft_type_handler(format[i], args);
