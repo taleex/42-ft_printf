@@ -6,7 +6,7 @@
 #    By: username <username@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/10 13:13:54 by username          #+#    #+#              #
-#    Updated: 2026/11/11 11:24:05 by username         ###   ########.fr        #
+#    Updated: 2026/11/12 10:33:55 by username         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,9 +45,9 @@ re: fclean all
 
 # For testing:
 main: re
-	$(CC) $(CFLAGS) main.c $(NAME) -o test
+	$(CC) $(CFLAGS) test/main.c $(NAME) -o test/test
 
 fcmain: fclean
-	$(RM) test
+	$(RM) test/test
 
 rb: fcmain main
