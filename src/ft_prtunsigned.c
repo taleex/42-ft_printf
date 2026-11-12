@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 10:32:27 by username          #+#    #+#             */
-/*   Updated: 2026/11/12 10:31:17 by username         ###   ########.fr       */
+/*   Updated: 2026/11/12 10:56:06 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,17 @@ static int	ft_unsigned_digits(unsigned int nbr)
 	return (i);
 }
 
-static void	ft_putunsinged(unsigned int nbr)
+static void	ft_putunsigned(unsigned int nbr)
 {
 	static char	digits[] = "0123456789";
 
 	if (nbr > 9)
-		ft_putunsinged (nbr / 10);
+		ft_putunsigned (nbr / 10);
 	ft_putchar_fd(digits[nbr % 10], 1);
 }
 
 int	ft_prtunsigned(unsigned int nbr)
 {
-	ft_putunsinged(nbr);
+	ft_putunsigned(nbr);
 	return (ft_unsigned_digits(nbr));
 }
