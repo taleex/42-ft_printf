@@ -43,11 +43,3 @@ re: fclean all
 
 .PHONY: all clean fclean re
 
-# For testing:
-main: re
-	$(CC) $(CFLAGS) test/main.c $(NAME) -o test/test
-
-fcmain: fclean
-	$(RM) test/test
-
-rb: fcmain main
