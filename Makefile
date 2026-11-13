@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: username <username@student.42.fr>          +#+  +:+       +#+         #
+#    By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/11/10 13:13:54 by username          #+#    #+#              #
-#    Updated: 2026/11/12 10:33:55 by username         ###   ########.fr        #
+#    Created: 2026/11/13 10:25:29 by jorgferr          #+#    #+#              #
+#    Updated: 2026/11/13 10:27:58 by jorgferr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

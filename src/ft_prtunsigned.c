@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_prtunsigned.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/11 10:32:27 by username          #+#    #+#             */
-/*   Updated: 2026/11/12 10:56:06 by username         ###   ########.fr       */
+/*   Created: 2026/11/13 10:21:56 by jorgferr          #+#    #+#             */
+/*   Updated: 2026/11/13 10:21:57 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,9 @@ static int	ft_unsigned_digits(unsigned int nbr)
 
 static void	ft_putunsigned(unsigned int nbr)
 {
-	static char	digits[] = "0123456789";
+	char	*digits;
 
+	digits = "0123456789";
 	if (nbr > 9)
 		ft_putunsigned (nbr / 10);
 	ft_putchar_fd(digits[nbr % 10], 1);
