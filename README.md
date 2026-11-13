@@ -10,7 +10,8 @@ characters directly to standard output, and dispatches supported conversion
 specifiers to dedicated functions.
 
 The project supports `%c`, `%s`, `%p`, `%d`, `%i`, `%u`, `%x`, `%X`, and `%%`.
-It uses the companion `libft` library for basic output and string utilities.
+It uses the companion [`libft`](libft/) library for basic output and string
+utilities.
 
 ## Features
 
@@ -24,11 +25,26 @@ It uses the companion `libft` library for basic output and string utilities.
 | `%x`, `%X` | Writes an unsigned integer in lowercase or uppercase hexadecimal. |
 | `%%` | Writes a literal percent sign. |
 
+## Project structure
+
+| Path | Purpose |
+| --- | --- |
+| [`ft_printf.c`](ft_printf.c) | Main function: reads the format string and dispatches each conversion. |
+| [`ft_printf.h`](ft_printf.h) | Header with the `ft_printf` prototype and the helper prototypes. |
+| [`Makefile`](Makefile) | Builds `libftprintf.a` (rules: `all`, `clean`, `fclean`, `re`). |
+| [`src/`](src/) | Folder with the helper functions, one file per conversion type. |
+| [`src/ft_prthex.c`](src/ft_prthex.c) | Hexadecimal output (`%x`, `%X`). |
+| [`src/ft_prtnbr.c`](src/ft_prtnbr.c) | Signed integer output (`%d`, `%i`). |
+| [`src/ft_prtptr.c`](src/ft_prtptr.c) | Pointer output (`%p`). |
+| [`src/ft_prtstr.c`](src/ft_prtstr.c) | String output (`%s`). |
+| [`src/ft_prtunsigned.c`](src/ft_prtunsigned.c) | Unsigned integer output (`%u`). |
+| [`libft/`](libft/) | Companion library, compiled by its own Makefile. |
+
 ## Instructions
 
 ### Build
 
-Run these commands from the repository root:
+Run this command from the repository root (see the [`Makefile`](Makefile)):
 
 ```sh
 make
