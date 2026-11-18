@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 10:25:14 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/11/13 10:25:16 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/11/14 13:31:02 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static int	ft_type_handler(char c, va_list args)
 int	ft_printf(const char *format, ...)
 {
 	size_t	i;
-	size_t	j;
+	int		j;
 	va_list	args;
 
 	if (!format)
