@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 10:21:05 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/11/13 10:21:07 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/11/18 12:19:29 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,9 @@ static int	ft_ptr_digits(unsigned long long nbr)
 
 static void	ft_put_ptr(unsigned long long ptr)
 {
-	static char	hex[] = "0123456789abcdef";
-
 	if (ptr >= 16)
 		ft_put_ptr(ptr / 16);
-	ft_putchar_fd(hex[ptr % 16], 1);
+	ft_putchar_fd(HEX_LOWER[ptr % 16], 1);
 }
 
 int	ft_prtptr(void *ptr)

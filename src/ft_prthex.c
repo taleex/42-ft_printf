@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 10:20:13 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/11/13 10:20:16 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/11/18 12:13:59 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,14 @@ static int	ft_hex_digit(unsigned int nbr)
 
 static void	ft_puthex(unsigned int nbr, bool case_sense)
 {
-	static char	hex_lower[] = "0123456789abcdef";
-	static char	hex_upper[] = "0123456789ABCDEF";
-
 	if (nbr >= 16)
 	{
 		ft_puthex ((nbr / 16), case_sense);
 	}
 	if (case_sense)
-		ft_putchar_fd(hex_upper[nbr % 16], 1);
+		ft_putchar_fd(HEX_UPPER[nbr % 16], 1);
 	else
-		ft_putchar_fd(hex_lower[nbr % 16], 1);
+		ft_putchar_fd(HEX_LOWER[nbr % 16], 1);
 }
 
 int	ft_prthex(unsigned int hex, bool case_sense)

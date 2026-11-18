@@ -6,12 +6,16 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 10:25:21 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/11/13 10:25:22 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/11/18 12:21:06 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
+
+# define HEX_LOWER "0123456789abcdef"
+# define HEX_UPPER "0123456789ABCDEF"
+# define DIGITS "0123456789"
 
 # include "libft/libft.h"
 # include <stddef.h>
